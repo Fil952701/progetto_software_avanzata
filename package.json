@@ -1,0 +1,8 @@
+{
+    "name": "progetto_software_avanzata",
+    "version": "1.0.0",
+    "description": "Progetto per ingegneria software avanzata",
+    "scripts": {
+      "test": "pytest"
+    }
+  }
