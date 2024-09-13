@@ -4,5 +4,8 @@
     "description": "Progetto per ingegneria software avanzata",
     "scripts": {
       "test": "pytest"
-    }
+    },
+    "dependencies": {
+    "pytest": "^8.3.3"
+  }
   }
