@@ -1,0 +1,17 @@
+{
+    "name": "progetto_software_avanzata",
+    "version": "1.0.0",
+    "description": "Progetto per ingegneria software avanzata",
+    "scripts": {
+      "test": "pytest",
+      "test-fornitore": "pytest -v tests/unit/TestFornitore.py",
+      "test-ordine": "pytest -v tests/unit/TestOrdine.py",
+      "test-personale": "pytest -v tests/unit/TestPersonale.py",
+      "test-prodotto": "pytest -v tests/unit/TestProdotto.py",
+      "test-integration": "pytest -v tests/integration/TestIntegration.py",
+      "test-database": "pytest -v tests/integration/TestDatabaseAndModel.py"
+    },
+    "dependencies": {
+    "pytest": "^8.3.3"
+  }
+  }

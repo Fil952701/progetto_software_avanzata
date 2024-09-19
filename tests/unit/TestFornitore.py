@@ -8,7 +8,6 @@ from fornitore.model.Fornitore import Fornitore
 
 # Classe di test per la sezione fornitore
 
-
 class TestFornitore(unittest.TestCase):
 
     def setUp(self):

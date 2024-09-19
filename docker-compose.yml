@@ -1,8 +1,8 @@
 services:
   web:
     build: .
-    image: ingegneria_software_avanzata-web:latest
-    container_name: ingegneria_software_avanzata-web-1
+    image: progetto_software_avanzata-web:latest
+    container_name: progetto_software_avanzata-web-1
     ports:
       - "80:80"
     volumes:

@@ -4,9 +4,7 @@ from ordine.controller.ControllerOrdine import ControllerOrdine
 
 from ordine.model.Ordine import Ordine
 
-
 # classe di test della sezione dell'ordine
-
 
 class TestOrdine(unittest.TestCase):
 

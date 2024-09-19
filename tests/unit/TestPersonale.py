@@ -4,9 +4,7 @@ from utente.controller.ControllerUtente import ControllerUtente
 
 from utente.model.Utente import Utente
 
-
 # classe di test della sezione del personale
-
 
 class TestPersonale(unittest.TestCase):
 

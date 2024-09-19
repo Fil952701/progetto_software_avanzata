@@ -23,9 +23,7 @@ import random
 import datetime
 import radar
 
-
 #  Classe di test per la sezione integration
-
 
 class TestIntegration_ultimo(unittest.TestCase):
 
@@ -85,9 +83,7 @@ class TestIntegration_ultimo(unittest.TestCase):
         self.controller_lista_prodotti.refresh_data()
         self.controller_lista_prodotti.save_data()
         
-
     # Test modulo della lista del personale e utente
-
 
     def test_listadelpersonale(self):
         
@@ -227,9 +223,7 @@ class TestIntegration_ultimo(unittest.TestCase):
         lista_del_personale= self.controller_lista_del_personale.get_lista_del_personale()
         self.assertTrue(ultimo_utente not in lista_del_personale) 
 
-    
     # Test modulo listafornitori e fornitore
-
 
     def test_listafornitori(self):
         
@@ -266,9 +260,7 @@ class TestIntegration_ultimo(unittest.TestCase):
         lista_fornitori= self.controller_lista_fornitori.get_lista_fornitori()
         self.assertTrue(ultimo_fornitore not in lista_fornitori) 
 
-
     # Test modulo e lista ordini
-
 
     def test_listaordini(self):
         

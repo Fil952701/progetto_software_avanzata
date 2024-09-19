@@ -55,9 +55,7 @@ class TestDatabaseAndModel(unittest.TestCase):
         self.controller_lista_prodotti.refresh_data()
         self.controller_lista_prodotti.save_data()
 
-
     # Test del flusso del database personale
-
 
     def test_db_flow_listadelpersonale(self):
         #Testo il caricamento dei file da JSON

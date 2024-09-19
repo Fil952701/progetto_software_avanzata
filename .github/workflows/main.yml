@@ -24,24 +24,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test the application
-        run: npm test
-
-  deploy_staging:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Deploy to staging
-        run: kubectl apply -f ./k8s/staging
-        env:
-          KUBECONFIG: ${{ secrets.KUBECONFIG_STAGING }}
-
-  deploy_production:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Deploy to production
-        run: kubectl apply -f ./k8s/production
-        env:
-          KUBECONFIG: ${{ secrets.KUBECONFIG_PRODUCTION }}
+        run: | 
+          npm test
+          pytest
