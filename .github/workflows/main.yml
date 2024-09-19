@@ -26,4 +26,4 @@ jobs:
       - name: Test the application
         run: npm test
       - name: Test the application
-        run: pytest
+        run: Pytest
