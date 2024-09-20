@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Activate virtual environment
-        run: source my_env/scripts/activate
+        run: source my_env/bin/activate
       - name: Test the application
         run: |
           pytest
