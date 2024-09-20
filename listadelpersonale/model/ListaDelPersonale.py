@@ -41,7 +41,7 @@ class ListaDelPersonale:
                 except EOFError:
                     return
         else:
-            with open('listadelpersonale\data\DatabaseDelPersonale.json') as f:
+            with open('listadelpersonale/data/DatabaseDelPersonale.json') as f:
                 lista_del_personale_json = json.load(f)
                 for utente_da_caricare in lista_del_personale_json:
                     self.lista_del_personale.append(Utente(utente_da_caricare["cod_utente"],
