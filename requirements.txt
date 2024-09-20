@@ -69,8 +69,8 @@ pyperclip==1.8.2
 PyQt5
 pyqt5-plugins
 PyQt5-Qt5==5.15.2
-PyQt5-sip==12.8.1
-PyQt5-stubs==5.15.2.0
+PyQt5-sip
+PyQt5-stubs
 PyRect==0.2.0
 pyRFC3339==1.1
 PyScreeze==0.1.28
