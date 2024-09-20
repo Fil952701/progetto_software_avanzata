@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian:bullseye
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Build the Docker image
@@ -20,7 +20,7 @@ jobs:
 
   test:
     needs: build
-    runs-on: debian:bullseye
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
