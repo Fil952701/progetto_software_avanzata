@@ -19,6 +19,7 @@ distro-info===1.0
 docopt==0.6.2
 Eel==0.12.4
 entrypoints==0.3
+faker
 fasteners==0.14.1
 future==0.18.2
 gevent-websocket==0.10.1
