@@ -23,7 +23,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: action/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Activate virtual environment
+        run: source my_env/scripts/activate
       - name: Test the application
-        run: | 
-          npm test
+        run: |
           pytest
