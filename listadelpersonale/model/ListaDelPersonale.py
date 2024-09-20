@@ -33,9 +33,9 @@ class ListaDelPersonale:
 
     # Caricamento in lista dei dati da file pickle, se esistente e non vuoto, o dal file json
     def refresh_data(self):
-        if os.path.isfile('listadelpersonale\data\DatabaseDelPersonale.pickle') and os.stat(
-                'listadelpersonale\data\DatabaseDelPersonale.pickle').st_size != 0:
-            with open('listadelpersonale\data\DatabaseDelPersonale.pickle', 'rb') as f:
+        if os.path.isfile('listadelpersonale/data/DatabaseDelPersonale.pickle') and os.stat(
+                'listadelpersonale/data/DatabaseDelPersonale.pickle').st_size != 0:
+            with open('listadelpersonale/data/DatabaseDelPersonale.pickle', 'rb') as f:
                 try:
                     self.lista_del_personale = pickle.load(f)
                 except EOFError:
@@ -61,6 +61,6 @@ class ListaDelPersonale:
 
     # Salvataggio del contenuto della lista su file pickle
     def save_data(self):
-        with open('listadelpersonale\data\DatabaseDelPersonale.pickle', 'wb') as handle:
+        with open('listadelpersonale/data/DatabaseDelPersonale.pickle', 'wb') as handle:
             pickle.dump(self.lista_del_personale, handle, pickle.HIGHEST_PROTOCOL)
 
