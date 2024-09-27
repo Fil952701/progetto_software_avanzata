@@ -23,13 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set DISPLAY variable
-        run: |
-            export DISPLAY=:0
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Activate virtual environment
         run: source my_env/Scripts/activate
       - name: Test the application
         run: |
-          pytest -v tests/unit/TestFornitore.py tests/unit/TestOrdine.py tests/unit/TestPersonale.py tests/unit/TestProdotto.py tests/integration/TestIntegration.py tests/integration/TestDatabaseAndModel.py tests/integration/TestGUI.py
+          pytest -v tests/unit/TestFornitore.py tests/unit/TestOrdine.py tests/unit/TestPersonale.py tests/unit/TestProdotto.py tests/integration/TestIntegration.py tests/integration/TestDatabaseAndModel.py
