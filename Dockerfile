@@ -9,6 +9,9 @@ ENV DISPLAY=:0
 
 RUN apt-get update && apt-get install -y python3 \
         python3-dev \
+        poppler-utils \
+        qpdf \
+        libpoppler-qt5-dev \
         procps \
         xauth \
         xvfb \
@@ -43,6 +46,7 @@ RUN apt-get update && apt-get install -y python3 \
         qtbase5-dev \
         libwayland-dev \
         libc6 \
+        libqt5pdfwidgets5 \
         libwayland-egl1-mesa \
         libwayland-server0 \
         libwayland-egl1 \
@@ -66,7 +70,7 @@ WORKDIR /progetto_software_avanzata
 COPY requirements.txt requirements.txt
 COPY . .
 
-#RUN chmod 700 /tmp && rm /my_env/lib/python3.9/site-packages/PyQt5/Qt5/plugins/imageformats/libqpdf.so
+RUN chmod 700 /tmp && rm /my_env/lib/python3.9/site-packages/PyQt5/Qt5/plugins/imageformats/libqpdf.so
 #RUN export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins
 RUN find / -name libqxcb.so > /tmp/xcb_plugin_path && \
     PLUGIN_PATH=$(head -n 1 /tmp/xcb_plugin_path) && \
