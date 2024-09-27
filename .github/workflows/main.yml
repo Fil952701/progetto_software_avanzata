@@ -23,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set DISPLAY variable
+        run: |
+            export DISPLAY=:0
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Activate virtual environment
