@@ -4,8 +4,7 @@ services:
     image: progetto_software_avanzata-web:latest
     container_name: progetto_software_avanzata-web-1
     ports:
-      - "5000:5000"
+      - "80:80"
     volumes:
       - ./:/app
       - ./data:/app/data
-      
