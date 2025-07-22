@@ -1,5 +1,5 @@
-# Progetto esame di Ingegneria del Software Avanzata
-Questo progetto consiste nella realizzazione di un software gestionale per un negozio di strumenti musicali generico
+# Progetto esame di Ingegneria del Software Avanzata - Shop Management (Python)
+Questo progetto consiste nella realizzazione di un software gestionale per un negozio di strumenti musicali generico.
 
 Ho utilizzato il linguaggio Python 3 con la libreria PyQt5 per l'interfaccia grafica.
 
